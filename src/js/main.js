@@ -29,8 +29,33 @@ function resizeLogic () {
     }
 }
 
+
+/**
+ * Change page background
+ */
+function changeBackground() {
+    var hashInUrl = "";
+    if(window.location.hash) {
+        hashInUrl = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+    } else {
+    }
+
+    var cssLink = "url('../img/backgrounds/" + backgroundPerPage[hashInUrl] + "')";
+    document.getElementsByTagName('body')[0].style.backgroundImage       = cssLink;
+    document.getElementsByTagName('body')[0].style.backgroundSize        = "cover";
+    document.getElementsByTagName('body')[0].style.backgroundRepeat      = "no-repeat";
+    document.getElementsByTagName('body')[0].style.backgroundAttachment  = "fixed";
+}
+
+
+
+
+
 //Initialize all resize
 resizeLogic();
+
+//Change page background
+changeBackground();
 
 //Reset the logic on page resize
 window.addEventListener('resize', function(event) {
