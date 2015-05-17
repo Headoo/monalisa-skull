@@ -9,7 +9,7 @@
 body { padding-top: 50px; padding-bottom: 20px; }
 
 /* Make all div transparent */
-.jumbotron, .container, body { background: transparent; !important  }
+.jumbotron, .jumbotron .container, .container, body { background: transparent; !important  }
 
 /* Align all content to middle */
 .container h1, .container p, .container .row div h1, .container .row div h2,
