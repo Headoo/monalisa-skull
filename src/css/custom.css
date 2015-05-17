@@ -298,3 +298,10 @@ a.marge_top{margin-top: 16px;display: block;}
 
 #button-second{margin-top: 0px;}
 }
+
+
+@media (orientation:portrait)and (max-width: 980px){
+    
+ .colorred_first {margin-top: 0.4px;}
+  a.marge_top{margin-top: 24px;display: block;}
+}
