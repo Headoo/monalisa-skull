@@ -10,9 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/custom.css">
 
@@ -32,8 +32,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Quitter</a>
-                    <a class="navbar-brand" href="#">Retour</a>
+                    <p>
+                    <i class="btn fa fa-chevron-right colorred"></i>
+                    <a class="btn btn btnleft btn-lg colorred" href="#">Retour</a>
+                   
+                    <i class="btn fa fa-chevron-right colorred"></i>
+                    <a class="btn btnleft btn-lg colorred" href="#">Quitter</a>
+                    </p>
+                    
                 </div>
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
                     <span class="navbar-brand">Accueil</span>
@@ -48,9 +54,9 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1>Préparez-vous à soutenir le XV de France en vidéo !</h1>
-                <p>Vous allez avoir 3 secondes pour exprimer votre soutien.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Cliquez ici, ils comptent sur vous!</a></p>
+                <h1 id="text-first">Préparez-vous à soutenir le XV de France en vidéo !</h1>
+                <h1 class="text-red seconde">Vous allez avoir 3 secondes pour exprimer votre soutien.</h1>
+                <p id="button-first"><i class="btn fa fa-chevron-right colorred"></i><a class="btn btnleft btn-lg colorred" href="#" role="button">Cliquez ici, ils comptent sur vous!</a></p>
             </div>
         </div>
 
@@ -60,7 +66,7 @@
             <div class="row" id="positioning">
                 <div class="col-md-12">
                   <h2>Placez-vous face à la caméra</h2>
-                  <p>Cliquez sur votre image</p>
+                  <p class="text-black">Cliquez sur votre image</p>
                   <p><img src="img/video_skull.jpg"></p>
                 </div>
             </div> 
@@ -69,8 +75,8 @@
             <div class="row" id="countdown">
                 <div class="col-md-12">
                     <h2>Regardez vers la caméra</h2>
-                    <p>L'enregistrement débutera dans</p>
-                    <p>5</p>
+                    <p class="text-black">L'enregistrement débutera dans</p>
+                    <p id="runner">5</p>
                 </div>
             </div>
 
@@ -78,9 +84,10 @@
             <div class="row" id="record">
                 <div class="col-md-12">
                     <h2>Ca tourne</h2>
-                    <p>Rec</p>
-                    <p>3/3s</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Appuyez ici quand vous avez terminé(e)!</a></p>
+                    <p class="text-black">[ Rec <i class="fa fa-circle circle-red"></i> ]</p>
+                    <p id="secondRunner">3/3s</p>
+                    <p><i class="btn fa fa-chevron-right colorred"></i>
+                        <a class="btn btnleft btn-lg colorred" href="#" role="button">Appuyez ici quand vous avez terminé(e)!</a></p>
                 </div>
             </div>
 
@@ -88,11 +95,13 @@
             <div class="row" id="validation">
                 <div class="col-md-12">
                     <h2>Voici votre vidéo</h2>
-                    <p>Validez-là ou recommencez</p>
+                    <p class="text-black">Validez-là ou recommencez</p>
                     <p><img src="img/video_skull.jpg"></p>
                     <p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Valider</a>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Recommencer</a>
+                        <i class="btn fa fa-chevron-right colorred"></i>
+                        <a class="btn btnleft btn-lg colorred" href="#" role="button">Valider</a>
+                        <i class="btn fa fa-chevron-right colorred"></i>
+                        <a class="btn btnleft btn-lg colorred" href="#" role="button">Recommencer</a>
                     </p>
                 </div>
             </div>
@@ -101,7 +110,7 @@
             <div class="row" id="form">
                 <div class="col-md-12">
                     <h2>Vos coordonnées</h2>
-                    <p>Pour recevoir votre vidéo</p>
+                    <p class="text-black">Pour recevoir votre vidéo</p>
                     <form class="navbar-form" role="form">
                         <div class="form-group">
                             <input type="text" placeholder="Email" class="form-control">
@@ -112,8 +121,15 @@
                         <div class="form-group">
                             <input type="text" placeholder="name" class="form-control">
                         </div><br/>
-                        <input type="checkbox" name="checkbox" id="checkbox"> Je soumets ma vidéo pour la tribune des supporters et j'accepte le règlement du jeu<br/>
-                        <button type="submit" class="btn btn-success">Valider</button>
+                        <div class="roundedcheck col-md-1 col-md-offset-2">
+                        <input type="checkbox" id="checkbox" name="condition">
+                                                <label for="checkbox">
+                                                    <span class="ui"></span>
+                                                </label>
+                        </div>
+                        <a href="#" class="col-md-7 text-left">Je soumets ma vidéo pour la tribune des supporters et j'accepte le règlement du jeu</a><br/>
+                        <i class="btn fa fa-chevron-right colorred"></i>
+                        <button type="submit" class="btn btnleft colorred">Valider</button>
                     </form>
                 </div>
             </div>
@@ -124,10 +140,10 @@
             <footer>
                 <div class="row" id="footer">
                     <div class="col-md-12">
-                        <h3>Merci !</h3>
-                        <p>Votre vidéo a été enregistrée avec succès.</p>
-                        <p>Vous allez recevoir un email vous invitant à la valider afin de la publier.</p>
-                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Revenir à la tribune</a></p>
+                        <h3 class="textred">Merci !</h3>
+                        <p class="textblack">Votre vidéo a été enregistrée avec succès.</p>
+                        <p class="textblack two">Vous allez recevoir un email vous invitant à la valider afin de la publier.</p>
+                        <p><i class="btn fa fa-chevron-right colorred"></i><a class="btn btnleft btn-lg colorred" href="#" role="button">Revenir à la tribune</a></p>
                     </div>
                 </div>
             </footer>
