@@ -25,6 +25,8 @@
 a{color:#000;}
 a:hover{color:#000;}
 
+#espace_top{margin-top: 10px;}
+
 h1#text-first{font-size: 48px !important; color: #000 !important;text-align: left!important;}
 
 .jumbotron div.container{top:54%;}
@@ -227,4 +229,47 @@ border-radius: 0px;
     color: #fff; 
 }
 
-.btnleft{padding: 6px; font-family: 'HelveticaNeueLTStd-LtCn';}
+.btnleft{padding: 3px; font-family: 'HelveticaNeueLTStd-LtCn';margin-top: 0.1px; margin-left: -2px;}
+
+.colorred_first{
+    background: #e20330;
+    color: #fff !important;
+    border: none;
+    margin-left: 1px;
+    padding: 6.5px;
+}
+
+
+.colorred_first:hover{
+    background: #333 !important;
+    color: #fff;
+}
+
+.colorred_second{
+    background: #e20330;
+    color: #fff !important;
+    border: none;
+    margin-left: -2px;
+    padding: 3px;
+    margin-top: 0.1px;
+}
+
+.colorred_second:hover{
+    background: #333 !important;
+    color: #fff;
+}
+
+.colorred_thired{
+    background: #e20330;
+    color: #fff !important;
+    border: none;
+    margin-left: 1px;
+    padding: 3px;
+    margin-top: 0.1px; 
+}
+
+.colorred_thired:hover{
+    background: #333 !important;
+    color: #fff;
+     
+}
